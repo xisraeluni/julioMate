@@ -1,0 +1,80 @@
+/* Estilos adicionales para las animaciones JS */
+
+/* Animación de aparición para tarjetas de curso */
+.course-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.course-card.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Transiciones para cambio de testimonios */
+.testimonial-content p,
+.testimonial-author img,
+.testimonial-author h4,
+.testimonial-author p {
+  transition: opacity 0.3s ease;
+}
+
+/* Estilos para mensajes de error en formularios */
+.form-group.error .error-message {
+  color: #ff3860;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.form-group.error input,
+.form-group.error textarea {
+  border-color: #ff3860;
+}
+
+/* Animación para botones con interacción */
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* Tooltip para el botón de comprar */
+.btn-buy {
+  position: relative;
+}
+
+.btn-buy:hover::before {
+  content: "¡Compra ahora!";
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.btn-buy:hover::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 8px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+  pointer-events: none;
+  opacity: 0;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+  }
+}

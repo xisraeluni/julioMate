@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cursos de matemáticas en línea para todos los niveles, desde básico hasta avanzado">
+    <title>Cursos de Matemáticas en Línea | MathCoursesOnline</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="/" class="logo">MathCourses<span>Online</span></a>
+            <div class="nav-toggle" id="navToggle" aria-label="Abrir menú de navegación">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#courses">Cursos</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li class="nav-close" id="navClose"><i class="fas fa-times"></i></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="container">
+            <h1>Cursos de Matemáticas</h1>
+            <p>Aprende nuevas habilidades desde la comodidad de tu hogar.</p>
+            <div class="cta-buttons">
+                <a href="#courses" class="btn btn-explore">Explorar Cursos</a>
+                <a href="#contact" class="btn btn-info">Contáctanos</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="courses" class="courses">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestras Categorías de Cursos</h2>
+                <p>Selecciona el curso que mejor se adapte a tus necesidades y nivel de conocimiento</p>
+            </div>
+            <div class="course-list">
+                <div class="course-card">
+                    <div class="course-badge">Básico</div>
+                    <div class="course-image">
+                        <img src="images/int-mat.png" alt="Introducción a las Matemáticas" loading="lazy">
+                    </div>
+                    <div class="course-content">
+                        <h3>Introducción a las Matemáticas</h3>
+                        <p>Fundamentos esenciales de aritmética, estadística, álgebra y geometría para construir una base sólida.</p>
+                        <div class="course-features">
+                            <span><i class="fas fa-video"></i> 24 lecciones</span>
+                            <span><i class="fas fa-clock"></i> 12 horas</span>
+                        </div>
+                        <div class="course-price">
+                            <span class="price">$100.00 MXN</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="c1.html" class="btn btn-info"><i class="fas fa-info-circle"></i> Más información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-badge">Intermedio</div>
+                    <div class="course-image">
+                        <img src="images/basicas.jpeg" alt="Matemáticas Intermedias" loading="lazy">
+                    </div>
+                    <div class="course-content">
+                        <h3>Matemáticas Intermedias</h3>
+                        <p>Profundiza en álgebra, geometría, trigonometría y cálculo de una variable con aplicaciones prácticas.</p>
+                        <div class="course-features">
+                            <span><i class="fas fa-video"></i> 36 lecciones</span>
+                            <span><i class="fas fa-clock"></i> 18 horas</span>
+                        </div>
+                        <div class="course-price">
+                            <span class="price">$150.00 MXN</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="c3.html" class="btn btn-info"><i class="fas fa-info-circle"></i> Más información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-badge">Aplicaciones</div>
+                    <div class="course-image">
+                        <img src="images/aplicadas.webp" alt="Matemáticas Intermedias" loading="lazy">
+                    </div>
+                    <div class="course-content">
+                        <h3>Matemáticas Aplicadas a Ciencias Sociales</h3>
+                        <p>Profundiza en Matemáticas Aplicadas a Ciencias Sociales con aplicaciones prácticas.</p>
+                        <div class="course-features">
+                            <span><i class="fas fa-video"></i> 36 lecciones</span>
+                            <span><i class="fas fa-clock"></i> 18 horas</span>
+                        </div>
+                        <div class="course-price">
+                            <span class="price">$175.00 MXN</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="c2.html" class="btn btn-info"><i class="fas fa-info-circle"></i> Más información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-badge">Avanzado</div>
+                    <div class="course-image">
+                        <img src="images/avanzada1.png" alt="Matemáticas para Ingenierías" loading="lazy">
+                    </div>
+                    <div class="course-content">
+                        <h3>Matemáticas Avanzadas para Ingenierías</h3>
+                        <p>Álgebra lineal, cálculo vectorial, ecuaciones diferenciales y análisis de Fourier con enfoque práctico.</p>
+                        <div class="course-features">
+                            <span><i class="fas fa-video"></i> 42 lecciones</span>
+                            <span><i class="fas fa-clock"></i> 24 horas</span>
+                        </div>
+                        <div class="course-price">
+                            <span class="price">$200.00 MXN</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="c3.html" class="btn btn-info"><i class="fas fa-info-circle"></i> Más información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-badge">Aplicaciones</div>
+                    <div class="course-image">
+                        <img src="images/avanzada2.webp" alt="Matemáticas Aplicadas a Ingenierías" loading="lazy">
+                    </div>
+                    <div class="course-content">
+                        <h3>Matemáticas Aplicadas a Ingeniería</h3>
+                        <p>Aplica los conocimientos matemáticos avanzados a problemas de ingeniería con ejercicios prácticos.</p>
+                        <div class="course-features">
+                            <span><i class="fas fa-video"></i> 42 lecciones</span>
+                            <span><i class="fas fa-clock"></i> 24 horas</span>
+                        </div>
+                        <div class="course-price">
+                            <span class="price">$225.00 MXN</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="c3.html" class="btn btn-info"><i class="fas fa-info-circle"></i> Más información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-badge">Especializado</div>
+                    <div class="course-image">
+                        <img src="images/puras.jpeg" alt="Matemáticas Puras" loading="lazy">
+                    </div>                    
+                    <div class="course-content">
+                        <h3>Matemáticas Puras</h3>
+                        <p>Teoría avanzada, demostraciones y aplicaciones teóricas de las matemáticas a nivel universitario.</p>
+                        <div class="course-features">
+                            <span><i class="fas fa-video"></i> 48 lecciones</span>
+                            <span><i class="fas fa-clock"></i> 30 horas</span>
+                        </div>
+                        <div class="course-price">
+                            <span class="price">$250.00 MXN</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="c4.html" class="btn btn-info"><i class="fas fa-info-circle"></i> Más información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Acerca de Nosotros</h2>
+                <p>Instructores expertos comprometidos con tu éxito académico</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/mate1.png" alt="Nuestro equipo" loading="lazy">
+                </div>
+                <div class="about-text">
+                    <h3>¿Por qué elegir nuestros cursos?</h3>
+                    <ul class="about-features">
+                        <li><i class="fas fa-check-circle"></i> Metodología probada y efectiva</li>
+                        <li><i class="fas fa-check-circle"></i> Instructores con experiencia académica</li>
+                        <li><i class="fas fa-check-circle"></i> Materiales de estudio de alta calidad</li>
+                        <li><i class="fas fa-check-circle"></i> Atención personalizada</li>
+                        <li><i class="fas fa-check-circle"></i> Flexibilidad horaria</li>
+                    </ul>
+                    <p>Nuestro objetivo es simplificar el aprendizaje de las matemáticas y ayudarte a desarrollar habilidades que te servirán toda la vida.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Lo que dicen nuestros estudiantes</h2>
+                <p>Experiencias reales de quienes han tomado nuestros cursos</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"Gracias a estos cursos pude aprobar mi examen de cálculo con excelente calificación. La metodología es muy clara y los instructores explican de manera que realmente entiendes los conceptos."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/Laura+Hernández.jpg" alt="Estudiante" loading="lazy">
+                        <div>
+                            <h4>Laura Hernández</h4>
+                            <p>Estudiante de Ingeniería</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contáctanos</h2>
+                <p>¿Tienes preguntas? Estamos aquí para ayudarte</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <p>Curso 100% en línea</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>julio@mathcourses.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+52 1 938 101 4602</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Tiktok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><br>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Threads"><i class="fab fa-threads"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fas fa-paper-plane"></i></a>
+                    </div>
+                </div>
+                <form id="contactForm" class="contact-form" onsubmit="return sendWhatsAppMessage(event)">
+                    <div class="form-group">
+                        <label for="name">Nombre completo</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Asunto</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar mensaje <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>MathCourses<span>Online</span></h3>
+                    <p>Transformando la educación matemática.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#courses">Cursos</a></li>
+                        <li><a href="#about">Acerca de</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-courses">
+                    <h4>Nuestros cursos</h4>
+                    <ul>
+                        <li><a href="c1.html">Introducción a las Matemáticas</a></li>
+                        <li><a href="c2.html">Matemáticas Intermedias</a></li>
+                        <li><a href="c3.html">Matemáticas para Ingenierías</a></li>
+                        <li><a href="c4.html">Matemáticas Puras</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Suscríbete a nuestro boletín</h4>
+                    <p>Recibe noticias, ofertas y consejos matemáticos</p>
+                    <form id="newsletterForm" onsubmit="return subscribeNewsletter(event)">
+                        <input type="email" placeholder="Correo Electrónico" required>
+                        <button type="submit" class="btn btn-primary" aria-label="Suscribirse al boletín"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MathCoursesOnline. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mejora del smooth scrolling para enlaces de navegación
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // Cerrar menú móvil si está abierto
+                document.querySelector('.nav-menu').classList.remove('active');
+                
+                // Scroll suave
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+
+        // Navegación móvil toggle mejorado
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        const navClose = document.getElementById('navClose');
+        
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.add('active');
+        });
+        
+        navClose.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        });
+
+        // Cerrar menú cuando se hace clic fuera
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !navToggle.contains(e.target) && navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+            }
+        });
+
+        // Formulario de contacto mejorado
+        function sendWhatsAppMessage(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value || 'Consulta desde la web';
+            const message = document.getElementById('message').value;
+            const encodedMessage = encodeURIComponent(`Nombre: ${name}\nCorreo: ${email}\nAsunto: ${subject}\nMensaje: ${message}`);
+            const phoneNumber = "529811152869";
+            window.location.href = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+            return false;
+        }
+
+        // Suscripción al boletín
+        function subscribeNewsletter(event) {
+            event.preventDefault();
+            const email = event.target.querySelector('input[type="email"]').value;
+            alert(`¡Gracias por suscribirte! Te hemos enviado un correo de confirmación a ${email}.`);
+            event.target.reset();
+            return false;
+        }
+
+        // Sticky Navbar
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
